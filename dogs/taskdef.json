@@ -1,10 +1,10 @@
 {
-  "executionRoleArn": "arn:aws:iam::621244614945:role/ecsTaskExecutionRole",
-  "taskRoleArn": "arn:aws:iam::621244614945:role/ecstask",
+  "executionRoleArn": "arn:aws:iam::422221795372:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::422221795372:role/ecstask",
   "containerDefinitions": [
     {
-      "name": "workshop-dogs",
-      "image": "621244614945.dkr.ecr.ap-northeast-2.amazonaws.com/workshop-dogs:latest",
+      "name": "dogs-repo",
+      "image": "422221795372.dkr.ecr.ap-northeast-2.amazonaws.com/dogs-repo:latest",
       "essential": true,
       "portMappings": [
         {
@@ -16,10 +16,10 @@
     }
   ],
   "requiresCompatibilities": [
-    "FARGATE"
+    "EC2"
   ],
   "networkMode": "awsvpc",
   "cpu": "256",
   "memory": "512",
-  "family": "workshop-dogs"
+  "family": "dogs-repo"
 }
