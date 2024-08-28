@@ -1,10 +1,10 @@
 {
-  "executionRoleArn": "arn:aws:iam::621244614945:role/ecsTaskExecutionRole",
-  "taskRoleArn": "arn:aws:iam::621244614945:role/ecstask",
+  "executionRoleArn": "arn:aws:iam::422221795372:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::422221795372:role/ecstask",
   "containerDefinitions": [
     {
       "name": "workshop-cats",
-      "image": "621244614945.dkr.ecr.ap-northeast-2.amazonaws.com/workshop-cats:latest",
+      "image": "422221795372.dkr.ecr.ap-northeast-2.amazonaws.com/cats-repo:latest",
       "essential": true,
       "portMappings": [
         {
@@ -21,5 +21,5 @@
   "networkMode": "awsvpc",
   "cpu": "256",
   "memory": "512",
-  "family": "workshop-cats"
+  "family": "cats-repo"
 }
