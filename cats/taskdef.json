@@ -3,7 +3,7 @@
   "taskRoleArn": "arn:aws:iam::422221795372:role/ecstask",
   "containerDefinitions": [
     {
-      "name": "workshop-cats",
+      "name": "cats-repo",
       "image": "422221795372.dkr.ecr.ap-northeast-2.amazonaws.com/cats-repo:latest",
       "essential": true,
       "portMappings": [
